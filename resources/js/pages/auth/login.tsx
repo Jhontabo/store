@@ -55,15 +55,7 @@ export default function Login({
                             <div className="grid gap-1">
                                 <div className="flex items-center">
                                     <Label htmlFor="password">Contraseña</Label>
-                                    {canResetPassword && (
-                                        <TextLink
-                                            href={request()}
-                                            className="ml-auto text-sm"
-                                            tabIndex={6}
-                                        >
-                                            ¿Olvidaste tu contraseña?
-                                        </TextLink>
-                                    )}
+
                                 </div>
                                 <Input
                                     id="password"
@@ -98,15 +90,7 @@ export default function Login({
                             </Button>
                         </div>
 
-                        {canRegister && (
-                            <div className="text-center text-sm text-muted-foreground">
-                                ¿No tienes una cuenta?{' '}
-                                <TextLink href={register()} tabIndex={6}>
-                                    Regístrate
-                                </TextLink>
-                            </div>
-                        )}
-                    </>
+                                            </>
                 )}
             </Form>
 
